@@ -180,7 +180,7 @@ main #banner {
     background-color: var(--secondary-color);
 }
 #banner .cta a:last-child {
-    color: var(--primary-color);
+    color: var(--color-white);
 }
 #banner .cta a:last-child:hover {
     background-color: var(--primary-color);
@@ -265,8 +265,8 @@ footer li {
 
 footer a:hover {
     background-color: #e11b22;
-    padding: 5px;
-    border-radius: 8px;
+    padding: 8px;
+    border-radius: 5px;
 }
 
 footer .footer-area {
@@ -289,6 +289,10 @@ footer .footer-area ul:not(.social-icons) a {
 }
 footer .footer-area ul:not(.social-icons) a:hover {
     color: var(--color-white);
+}
+
+footer .footer-area ul {
+    padding: 0;
 }
 
 .footer-area .social-icons {
@@ -447,6 +451,7 @@ footer .footer-area ul:not(.social-icons) a:hover {
     #banner .banner-text {
         margin-right: 0;
     }
+    
     #banner .banner-image {
         display: none;
     }
@@ -461,9 +466,20 @@ footer .footer-area ul:not(.social-icons) a:hover {
     #brands .brands-slide .brand {
         margin-bottom: 40px;
     }
+    #banner {
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    }
+    .container-space-cursos {
+        background-color: var(--color-light-gray);
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    }
 
 }
 @media (max-width: 690px) {
+
+    #banner .banner-image {
+        display: none;
+    }
 
     #banner .banner-text h1 {
         text-align: center;
@@ -478,6 +494,10 @@ footer .footer-area ul:not(.social-icons) a:hover {
     }
     #banner .cta a:last-child {
         margin-top: 20px;
+    }
+
+    #banner {
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
     }
     
     footer .container {
