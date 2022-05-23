@@ -317,6 +317,19 @@ footer .footer-area ul:not(.social-icons) a:hover {
     max-width: 1140px;
 }
 
+/* CURSOS */
+
+
+.container-cursos {
+    background-color: #e11b22;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: calc(100% - 200px)
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 990px) {
 
@@ -402,5 +415,4 @@ footer .footer-area ul:not(.social-icons) a:hover {
     footer .footer-area h3 {
         margin-top: 20px;
     }
-
 }
