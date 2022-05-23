@@ -2,6 +2,9 @@
     --primary-color: #000;
     --secondary-color: #e11b22;
     --color-white: #FFF;
+    --color-dark-gray: #333;
+  --color-gray: #c4c4c4;
+  --color-light-gray: #f0f0f0;
     --primary-font: 'Raleway', 'Open Sans', sans-serif;
 }
 
@@ -321,14 +324,78 @@ footer .footer-area ul:not(.social-icons) a:hover {
 
 
 .container-cursos {
-    background-color: #e11b22;
-    justify-content: center;
-    text-align: center;
+    background-color: var(--color-white);
+    color: var(--primary-color);
+    width: 100%;
+    min-height: 418px;
+    top: 100px;
     display: flex;
-    margin-left: 100px;
-    margin-right: 100px;
-    width: calc(100% - 200px)
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-sections-cursos {
+    max-width: 960px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  
+  .container-cursos h1 {
+    padding: 20px;
+    font-size: 36px;
+  }
+  
+  .container-space-cursos {
+    background-color: var(--color-light-gray);
+    color: var(--primary-color);
+    margin-bottom: 40px;
+    border-radius: 8px;
+    max-width: 960px;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    display: block;
+  }
+  
+  .container-space-cursos h2 {
+      margin-bottom: 10px;
+  }
+
+  .container-space-cursos h4 {
+    margin-bottom: 10px;
+    margin-top: -10px;
+    color: var(--color-dark-gray);
+  }
+
+  .text-cursos {
+      font-weight: 700;
+  }
+
+  table {
+      text-align: center;
+  }
+
+  thead {
+    font-size: 20px;
+    font-weight: 700;
 }
+
+  tbody tr:hover {
+    background-color: var(--color-white);
+    cursor: pointer;
+}
+
+.separador {
+    border: none;
+    cursor: auto;
+}
+
+.separador:hover {
+    background-color: var(--color-light-gray);
+}
+
 
 /* MEDIA QUERIES */
 @media (max-width: 990px) {
@@ -414,5 +481,9 @@ footer .footer-area ul:not(.social-icons) a:hover {
     }
     footer .footer-area h3 {
         margin-top: 20px;
+    }
+    .container-space-cursos {
+        background-color: var(--color-light-gray);
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
     }
 }
