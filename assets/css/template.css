@@ -407,6 +407,200 @@ footer .footer-area ul {
     background-color: var(--color-light-gray);
 }
 
+/* Projeto de Extensão */
+
+
+#banner .images-projetos1 {
+    position: relative;
+    width: 300px;
+}
+#banner .images-projetos1::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 250px;
+    bottom: -35px;
+    width: 350px;
+    height: 300px;
+    background-image: url('../images/fabrica-de-software.jpg');
+    background-size: cover;
+    background-color: var(--secondary-color);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#banner .images-projetos1 img {
+    width: 100%;
+}
+
+#banner .images-projetos2 {
+    position: relative;
+    width: 300px;
+}
+#banner .images-projetos2::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 250px;
+    bottom: -35px;
+    width: 350px;
+    height: 300px;
+    background-image: url('../images/pid.jpg');
+    background-size: cover;
+    background-color: var(--secondary-color);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#banner .images-projetos2 img {
+    width: 100%;
+}
+
+#banner .images-projetos3 {
+    position: relative;
+    width: 300px;
+}
+#banner .images-projetos3::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 250px;
+    bottom: -35px;
+    width: 350px;
+    height: 300px;
+    background-image: url('../images/aida.jpg');
+    background-size: cover;
+    background-color: var(--secondary-color);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#banner .images-projetos3 img {
+    width: 100%;
+}
+
+/* Formulario */
+
+#signup {
+    padding: 0 8px 40px 12px;
+    background-image: url('../images/bg-uniesp-cursos.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #signup .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .signup-title {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    line-height: 36px;
+    font-weight: 700;
+    margin: 40px 0 16px 0;
+  }
+  
+  .signup-form {
+    background-color: var(--color-light-gray);
+    background-size: cover;
+    background-position: center;
+    padding-top: 52px;
+    border-radius: 8px;
+    padding-right: 12px;
+    padding-left: 8px;
+    padding-bottom: 33px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+  
+  .favourite-curso {
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 47px;
+  }
+  
+  .favourite-curso p {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+  
+  .signup-text-inputs {
+    width: 100%;
+    height: 50px;
+    padding-left: 22px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .form-control {
+    width: 100%;
+    height: 50px;
+    padding-left: 22px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+  }
+  
+  .allow-cod-check {
+    margin-top: 35px;
+    display: flex;
+  }
+  
+  .allow-cod-check input {
+    width: 23px;
+    height: 23px;
+    margin: 0;
+    background-color: var(--color-white);
+    border: 1px solid var(--primary-color);
+    padding: 0;
+  }
+  
+  .allow-cod-check label {
+    margin-left: 9px;
+  }
+  
+  .btns-submit-reset {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .btns-submit-reset input {
+    cursor: pointer;
+    height: 67px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 27px;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .btns-submit-reset input[type="submit"] {
+    color: var(--color-white);
+    background-color: var(--secondary-color);
+    margin-bottom: 20px;
+  }
+  
+  .btns-submit-reset input[type="reset"] {
+    color: var(--secondary-color);
+    background-color: var(--color-white);
+    border: 2px solid var(--secondary-color);
+  }
+
 
 /* MEDIA QUERIES */
 @media (max-width: 990px) {
@@ -456,6 +650,10 @@ footer .footer-area ul {
         display: none;
     }
 
+    #banner .images-projetos1, #banner .images-projetos2, #banner .images-projetos3 {
+        display: none;
+    }
+
     #brands .brands-slideshow {
         width: calc(100vw * 2);
         animation-duration: 10s;
@@ -484,6 +682,10 @@ footer .footer-area ul {
     #banner .banner-text h1 {
         text-align: center;
         font-size: 32px;
+    }
+    #banner .banner-text {
+        text-align: center;
+        width: 100%;
     }
     #banner .cta {
         flex-direction: column;
